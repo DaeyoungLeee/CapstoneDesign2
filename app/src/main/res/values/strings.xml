@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CapstoneDesign2</string>
+    <string name="need_an_account">Need an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Log In</string>
+    <string name="saveid">Save ID</string>
+    <string name="savepassword">Save Password</string>
+    <string name="did_you_forget_your_email">Did you forget your Email?</string>
+    <string name="did_you_forget_your_password">Did you forget your password?</string>
+    <string name="show_chart">Show Chart</string>
+    <string name="connect_bluetooth">Connect Bluetooth</string>
+    <string name="log_out">Log Out</string>
+    <string name="basic_setting">Basic Setting</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="activate_pattern">Activate Pattern</string>
+    <string name="start_record">Start Record</string>
+</resources>
