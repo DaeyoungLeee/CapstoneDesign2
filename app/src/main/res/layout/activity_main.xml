@@ -16,10 +16,14 @@
             android:layout_height="400dp" />
 
         <Switch
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/activate_pattern"/>
         <Switch
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_record"/>
