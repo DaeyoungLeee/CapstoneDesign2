@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LogIn_Preference.LogIn_Activity"/>
+        <activity android:name=".DrawerLayout_Contents.BasicSetting_Activity"/>
+        <activity android:name=".DrawerLayout_Contents.MaximumMuscle_Activity"/>
     </application>
 
 </manifest>

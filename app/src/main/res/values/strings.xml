@@ -15,4 +15,19 @@
     <string name="close">close</string>
     <string name="activate_pattern">Activate Pattern</string>
     <string name="start_record">Start Record</string>
+    <string name="prosthetic_wear_direction">Prosthetic wear direction</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="interval_between_actions">Interval between actions(sec)</string>
+    <string name="recording_with_the_arm_bent_at_90_degrees">Recording with the arm bent at 90 degrees</string>
+    <string name="set_value">Set value</string>
+    <string name="sec">sec</string>
+    <string name="measure_maximum_muscle_activity">Measure maximum \nmuscle activity</string>
+    <string name="set_1">Set 1</string>
+    <string name="set_2">Set 2</string>
+    <string name="finish">Finish</string>
+    <string name="_1st">1st</string>
+    <string name="_2nd">2nd</string>
+    <string name="_3rd">3rd</string>
+    <string name="next">Next</string>
 </resources>

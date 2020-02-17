@@ -5,36 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <com.github.mikephil.charting.charts.RadarChart
-            android:id="@+id/radarChart"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp" />
+            android:layout_height="match_parent">
 
-        <Switch
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/radarChart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingStart="16dp"
+                android:background="@drawable/shadow_grey_background"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/sw_active"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activate_pattern" />
+
+                <Switch
+                    android:id="@+id/sw_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_record" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/activate_pattern"/>
-        <Switch
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/start_record"/>
-
-    </LinearLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/menu" />
-
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
