@@ -108,8 +108,12 @@ public class BasicSetting_Activity extends AppCompatActivity implements View.OnC
                 startActivity(intent);
                 break;
             case R.id.imgbtn_set1:
+                Intent intent1 = new Intent(BasicSetting_Activity.this, Set1_Activity.class);
+                startActivity(intent1);
                 break;
             case R.id.imgbtn_set2:
+                Intent intent2 = new Intent(BasicSetting_Activity.this, Set2_Activity.class);
+                startActivity(intent2);
                 break;
         }
     }

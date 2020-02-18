@@ -25,6 +25,8 @@
         <activity android:name=".LogIn_Preference.LogIn_Activity"/>
         <activity android:name=".DrawerLayout_Contents.BasicSetting_Activity"/>
         <activity android:name=".DrawerLayout_Contents.MaximumMuscle_Activity"/>
+        <activity android:name=".DrawerLayout_Contents.Set1_Activity"/>
+        <activity android:name=".DrawerLayout_Contents.Set2_Activity"/>
     </application>
 
 </manifest>

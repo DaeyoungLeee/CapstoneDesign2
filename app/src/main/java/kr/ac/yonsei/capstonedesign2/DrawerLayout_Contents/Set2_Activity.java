@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import kr.ac.yonsei.capstonedesign2.R;
 
-public class Set1_Activity extends AppCompatActivity implements View.OnClickListener {
+public class Set2_Activity extends AppCompatActivity implements View.OnClickListener {
 
     int count = 1;
     int i_rest, i_lateral, i_cylinder, i_palmar, i_v, i_index, i_thumb = 0;
@@ -52,12 +52,12 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_1);
+        setContentView(R.layout.activity_set_2);
 
-        nextButton = findViewById(R.id.imgbtn_set1_next);
-        progressBar = findViewById(R.id.progress_set1);
-        txt_guide = findViewById(R.id.txt_set1_guide);
-        img_guide = findViewById(R.id.img_set1_guide);
+        nextButton = findViewById(R.id.imgbtn_set2_next);
+        progressBar = findViewById(R.id.progress_set2);
+        txt_guide = findViewById(R.id.txt_set2_guide);
+        img_guide = findViewById(R.id.img_set2_guide);
 
         progressBar.setMax(400);
 
@@ -70,25 +70,25 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
 
         mRef_set1_rest = mDatabase.getReference("user_id")
                 .child("data")
-                .child("rest1");
+                .child("rest2");
         mRef_set1_lateral = mDatabase.getReference("user_id")
                 .child("data")
-                .child("lateral_pinch1");
+                .child("lateral_pinch2");
         mRef_set1_cylinder = mDatabase.getReference("user_id")
                 .child("data")
-                .child("cylinder_grasp1");
+                .child("cylinder_grasp2");
         mRef_set1_palmar = mDatabase.getReference("user_id")
                 .child("data")
-                .child("palmar_pinch1");
+                .child("palmar_pinch2");
         mRef_set1_v = mDatabase.getReference("user_id")
                 .child("data")
-                .child("v1");
+                .child("v2");
         mRef_set1_index = mDatabase.getReference("user_id")
                 .child("data")
-                .child("index1");
+                .child("index2");
         mRef_set1_thumb = mDatabase.getReference("user_id")
                 .child("data")
-                .child("thumb_up1");
+                .child("thumb_up2");
 
         mChild_rest = new ChildEventListener() {
             @Override
@@ -124,7 +124,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_rest++;
 
                 mDatabase.getReference("user_id")
-                        .child("rest_average1")
+                        .child("rest_average2")
                         .child("EMG")
                         .setValue(e1 / i_rest + ":" + e2 / i_rest + ":" + e3 / i_rest + ":" + e4 / i_rest + ":" + e5 / i_rest + ":" + e6 / i_rest + ":" + e7 / i_rest + ":" + e8 / i_rest);
             }
@@ -178,7 +178,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_lateral++;
 
                 mDatabase.getReference("user_id")
-                        .child("lateral_average1")
+                        .child("lateral_average2")
                         .child("EMG")
                         .setValue(el1 / i_lateral + ":" + el2 / i_lateral+ ":" + el3 / i_lateral+ ":" + el4 / i_lateral+ ":" + el5 / i_lateral+ ":" + el6 / i_lateral+ ":" + el7 / i_lateral+ ":" + el8 / i_lateral);
             }
@@ -232,7 +232,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_cylinder++;
 
                 mDatabase.getReference("user_id")
-                        .child("cylinder_average1")
+                        .child("cylinder_average2")
                         .child("EMG")
                         .setValue(ec1 / i_cylinder + ":" + ec2 / i_cylinder + ":" + ec3 / i_cylinder + ":" + ec4 / i_cylinder + ":" + ec5 / i_cylinder + ":" + ec6 / i_cylinder + ":" + ec7 / i_cylinder + ":" + ec8 / i_cylinder);
             }
@@ -286,7 +286,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_palmar++;
 
                 mDatabase.getReference("user_id")
-                        .child("palmar_average1")
+                        .child("palmar_average2")
                         .child("EMG")
                         .setValue(ep1 / i_palmar + ":" + ep2 / i_palmar + ":" + ep3 / i_palmar + ":" + ep4 / i_palmar + ":" + ep5 / i_palmar + ":" + ep6 / i_palmar + ":" + ep7 / i_palmar + ":" + ep8 / i_palmar);
             }
@@ -340,7 +340,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_v++;
 
                 mDatabase.getReference("user_id")
-                        .child("v_average1")
+                        .child("v_average2")
                         .child("EMG")
                         .setValue(ev1 / i_v + ":" + ev2 / i_v + ":" + ev3 / i_v + ":" + ev4 / i_v + ":" + ev5 / i_v + ":" + ev6 / i_v + ":" + ev7 / i_v + ":" + ev8 / i_v);
             }
@@ -394,7 +394,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_index++;
 
                 mDatabase.getReference("user_id")
-                        .child("index_average1")
+                        .child("index_average2")
                         .child("EMG")
                         .setValue(ei1 / i_index + ":" + ei2 / i_index + ":" + ei3 / i_index + ":" + ei4 / i_index + ":" + ei5 / i_index + ":" + ei6 / i_index + ":" + ei7 / i_index + ":" + ei8 / i_index);
             }
@@ -448,7 +448,7 @@ public class Set1_Activity extends AppCompatActivity implements View.OnClickList
                 i_thumb++;
 
                 mDatabase.getReference("user_id")
-                        .child("thumb_up_average1")
+                        .child("thumb_up_average2")
                         .child("EMG")
                         .setValue(et1 / i_thumb + ":" + et2 / i_thumb + ":" + et3 / i_thumb + ":" + et4 / i_thumb + ":" + et5 / i_thumb + ":" + et6 / i_thumb + ":" + et7 / i_thumb + ":" + et8 / i_thumb);
             }

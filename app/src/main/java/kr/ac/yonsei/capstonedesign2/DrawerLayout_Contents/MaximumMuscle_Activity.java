@@ -66,7 +66,7 @@ public class MaximumMuscle_Activity extends AppCompatActivity {
                                     txt_guide2.setTextSize(32);
                                     mRef2.addChildEventListener(mChildListener2);
                                 }
-                            }, 1000);
+                            }, 2000);
                         }
                     }).start();
 
@@ -86,7 +86,7 @@ public class MaximumMuscle_Activity extends AppCompatActivity {
                                     txt_guide3.setTextSize(32);
                                     mRef3.addChildEventListener(mChildListener3);
                                 }
-                            }, 1000);
+                            }, 2000);
                         }
                     }).start();
 
